@@ -1,6 +1,13 @@
 <?php
-  if(isset($_POST['searchterm'])) {
-    echo htmlspecialchars($_POST['searchterm'], ENT_QUOTES);
+  $name = '';
+  $password = '';
+  $gender = '';
+  $color = '';
+  $languages = [];
+  $comments = '';
+  $tc = '';
+  if(isset($_POST['submit'])) {
+
   }
 ?>
 
@@ -29,5 +36,5 @@
     Comments: <textarea name="comments"></textarea><br>
     <input type="checkbox" name="tc" value="ok">
       I accept the T&amp;C<br>
-    <input type="submit" value="Search">
+    <input type="submit" name="submit" value="Register">
 </form>
