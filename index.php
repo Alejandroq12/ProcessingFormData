@@ -8,8 +8,8 @@
   $tc = '';
   if(isset($_POST['submit'])) {
     
-    printf('User name: $name
-    <br>Password: $password');
+    printf('User name: %s
+    <br>Password: %s');
 
   }
 ?>
