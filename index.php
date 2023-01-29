@@ -7,9 +7,43 @@
   $comments = '';
   $tc = '';
   if(isset($_POST['submit'])) {
+    if (isset($_POST['name'])) {
+      $name = $_POST['name'];
+    };
+    if (isset($_POST['password'])) {
+      $password = $_POST['password'];
+    };
+    if (isset($_POST['gender'])) {
+      $gender = $_POST['gender'];
+    };
+    if (isset($_POST['color'])) {
+      $color = $_POST['color'];
+    };
+    if (isset($_POST['languages'])) {
+      $languages = $_POST['languages'];
+    };
+    if (isset($_POST['comments'])) {
+      $comments = $_POST['comments'];
+    };
+    if (isset($_POST['tc'])) {
+      $tc = $_POST['tc'];
+    };
     
     printf('User name: %s
-    <br>Password: %s');
+       <br>Password: %s
+       <br>Gender: %s
+       <br>Color: %s
+       <br>Languages(s): %s
+       <br>Comments: %s
+       <br>T&amp;C: %s',
+       htmlspecialchars($name, ENT_QUOTES),
+       htmlspecialchars($password, ENT_QUOTES),
+       htmlspecialchars($gender, ENT_QUOTES),
+       htmlspecialchars($color, ENT_QUOTES),
+       htmlspecialchars(implode(' ', $languages), ENT_QUOTES),
+       htmlspecialchars($comments, ENT_QUOTES),
+       htmlspecialchars($tc, ENT_QUOTES),
+  );
 
   }
 ?>
