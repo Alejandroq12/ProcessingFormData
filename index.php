@@ -26,7 +26,7 @@
         <option value="fr">French</option>
         <option value="it">Italian</option>
       </select><br>
-    Comments: <textarea name="comments"><br>
+    Comments: <textarea name="comments"></textarea><br>
     <input type="checkbox" name="tc" value="ok">
       I accept the T&amp;C<br>
     <input type="submit" value="Search">
