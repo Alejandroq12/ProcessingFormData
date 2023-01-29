@@ -25,6 +25,7 @@
         <option value="en">English</option>
         <option value="fr">French</option>
         <option value="it">Italian</option>
-      </select>
+      </select><br>
+    Comments: <textarea name="comments"><br>
     <input type="submit" value="Search">
 </form>
