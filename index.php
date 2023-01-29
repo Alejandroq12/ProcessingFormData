@@ -7,6 +7,11 @@
 <form
     action=""
     method="post">
-    <input type="text" name="searchterm">
+    User name: <input type="text" name="name"><br>
+    Password: <input type="password" name="password"><br>
+    Gender: 
+      <input type="radio"  name="gender" value="f"> female
+      <input type="radio"  name="gender" value="m"> male
+      <input type="radio" name="gender"  value="o"> other<br />
     <input type="submit" value="Search">
 </form>
