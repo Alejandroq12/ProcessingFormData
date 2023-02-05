@@ -25,7 +25,9 @@ if (isset($_POST['submit'])) {
   } else {
     $gender = $_POST['gender'];
   };
-  if (isset($_POST['color'])) {
+  if (!isset($_POST['color']) || $_POST['color'] === '') {
+    $ok = false;
+  } else {
     $color = $_POST['color'];
   };
   if (isset($_POST['languages'])) {
