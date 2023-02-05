@@ -15,7 +15,9 @@ if (isset($_POST['submit'])) {
   } else {
     $name = $_POST['name'];
   };
-  if (isset($_POST['password'])) {
+  if (!isset($_POST['password']) || $_POST['password'] === '') {
+    $ok = false;
+  } else {
     $password = $_POST['password'];
   };
   if (isset($_POST['gender'])) {
