@@ -36,7 +36,9 @@ if (isset($_POST['submit'])) {
   } else {
     $languages = $_POST['languages'];
   };
-  if (isset($_POST['comments'])) {
+  if (!isset($_POST['comments']) || $_POST['comments'] === '') {
+    $ok = false;
+  } else {
     $comments = $_POST['comments'];
   };
   if (isset($_POST['tc'])) {
