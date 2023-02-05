@@ -41,7 +41,9 @@ if (isset($_POST['submit'])) {
   } else {
     $comments = $_POST['comments'];
   };
-  if (isset($_POST['tc'])) {
+  if (!isset($_POST['tc']) || $_POST['tc'] === '') {
+    $ok = false;
+  } else {
     $tc = $_POST['tc'];
   };
 
