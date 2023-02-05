@@ -30,7 +30,10 @@ if (isset($_POST['submit'])) {
   } else {
     $color = $_POST['color'];
   };
-  if (isset($_POST['languages'])) {
+  if (!isset($_POST['languages']) || !is_array($_POST['languages']) 
+  || count($_POST['languages']) === 0) {
+    $ok = false;
+  } else {
     $languages = $_POST['languages'];
   };
   if (isset($_POST['comments'])) {
