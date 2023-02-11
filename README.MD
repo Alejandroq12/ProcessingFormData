@@ -1,5 +1,3 @@
-
-This code is a simple PHP script that creates an HTML form with various input fields, including text input, password input, radio buttons, and dropdown menus. When the form is submitted, the script checks if the $_POST['searchterm'] variable is set, and if so, it echoes the value of the searchterm field after running it through the htmlspecialchars() function with the ENT_QUOTES flag to escape any special characters. The form includes fields for user name, password, gender, favorite color, and languages spoken. There is also a submit button labeled "Search".
 <a name="readme-top">Processing Form Data</a>
 
 <!--
@@ -66,7 +64,7 @@ After you're finished please remove all the comments and instructions!
 
 > Describe your project in 1 or 2 sentences.
 
-**[your_project__name]** is a...
+This code is a simple PHP script that creates an HTML form with various input fields, including text input, password input, radio buttons, and dropdown menus. When the form is submitted, the script checks if the $_POST['searchterm'] variable is set, and if so, it echoes the value of the searchterm field after running it through the htmlspecialchars() function with the ENT_QUOTES flag to escape any special characters. The form includes fields for user name, password, gender, favorite color, and languages spoken. There is also a submit button labeled "Search".
 
 ## 🛠 Built With <a name="built-with"></a>
 
