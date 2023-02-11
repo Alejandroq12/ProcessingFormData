@@ -30,7 +30,7 @@ After you're finished please remove all the comments and instructions!
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>Processing Form Data</b></h3>
 
 </div>
 
@@ -60,9 +60,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
-
-> Describe your project in 1 or 2 sentences.
+# 📖 [Processing Form Data] <a name="about-project"></a>
 
 This code is a simple PHP script that creates an HTML form with various input fields, including text input, password input, radio buttons, and dropdown menus. When the form is submitted, the script checks if the $_POST['searchterm'] variable is set, and if so, it echoes the value of the searchterm field after running it through the htmlspecialchars() function with the ENT_QUOTES flag to escape any special characters. The form includes fields for user name, password, gender, favorite color, and languages spoken. There is also a submit button labeled "Search".
 
